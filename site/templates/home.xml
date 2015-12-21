@@ -88,6 +88,30 @@
 						/>
 				</div>	
 			</header>
+
+			<section id="about">
+				<h2>
+					<cms:text constant="title_about"/>
+					<img 
+						src="_BASEURL.'/site/images/logo.png'"  
+						alt="logo"
+						class="logo"
+						cms:eval="src"
+						/>
+				</h2>
+				<p><cms:text constant="subtitle_first"/></p>
+				<p><cms:text constant="subtitle_second"/></p>
+
+				<ul>
+					<cms:module
+						name="articles"
+						action="show_list"
+						group="features"
+						template="parts/features.xml"
+						/>	
+				</ul>
+				
+			</section>
 		</body>
 	</html>
 </document>

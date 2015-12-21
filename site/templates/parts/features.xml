@@ -1,0 +1,24 @@
+<document>
+	<li class="$params['text_id']" cms:eval="class">
+		<h4><cms:var param="title" multilanguage="yes"/></h4>
+		<p><cms:markdown param="content" multilanguage="yes"/></p>
+
+		<cms:if condition="$params['text_id'] == foreign">
+			<img 
+				src="_BASEURL.'/site/images/money-box.svg'"  
+				alt="logo"
+				class="logo"
+				cms:eval="src"
+				/>
+		</cms:if>
+
+		<cms:if condition="$params['text_id'] == loan">
+			<img 
+				src="_BASEURL.'/site/images/girl.svg'"  
+				alt="logo"
+				class="logo"
+				cms:eval="src"
+				/>
+		</cms:if>
+	</li>
+</document>
