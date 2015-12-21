@@ -149,6 +149,15 @@ div#form_wrap form label input {
 	color: @color_ac_white;
 	background-color: transparent;
 	width: calc(~'(250px - 40px)');
+	transition: all 0.3s;
+}
+
+div#form_wrap form label input:hover {
+	background-color: fade(@color_ac_white,10%);
+}
+
+div#form_wrap form label input:focus {
+	background-color: fade(@color_ac_white,30%);
 }
 
 div#form_wrap form div.controls {
