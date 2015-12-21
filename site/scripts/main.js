@@ -55,7 +55,7 @@ Site.on_load = function() {
 	//create images slider
 	Site.images_slider = new PageControl('header', 'img.slider_image');
 	Site.images_slider
-		.setInterval(8000)
+		.setInterval(4000)
 		.setWrapAround(true);
 };
 
