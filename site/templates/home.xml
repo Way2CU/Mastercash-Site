@@ -10,7 +10,74 @@
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
-			<h1>It works!</h1>
+			<cms:svg file="site-sprite.svg"/>
+
+			<header>
+				<img 
+					src="_BASEURL.'/site/images/logo.png'"  
+					alt="logo"
+					class="logo"
+					cms:eval="src"
+					/>
+
+				<h1><cms:text constant="title_header"/></h1>
+				<p>
+					<svg>
+						<use
+							href="#icon-coins"
+							xlink:href="site/images/site-sprite.svg#icon-coins"
+							/>
+					</svg>
+
+					<cms:text constant="title_feature1"/>
+				</p>
+
+				<p>
+					<svg>
+						<use
+							href="#icon-hand"
+							xlink:href="site/images/site-sprite.svg#icon-hand"
+							/>
+					</svg>
+
+					<cms:text constant="title_feature2"/>
+				</p>
+
+				<p>
+					<svg>
+						<use
+							href="#icon-credit"
+							xlink:href="site/images/site-sprite.svg#icon-credit"
+							/>
+					</svg>
+
+					<cms:text constant="title_feature3"/>
+				</p>
+
+				<a
+
+					href="'tel:'.urlencode(Language::getText('phone'))"
+					cms:eval="href"
+					class="phone"
+					>
+					<span><cms:text constant="title_action"/></span>
+					<cms:text constant="phone"/>
+					<svg>
+						<use
+							href="#icon-phone"
+							xlink:href="site/images/site-sprite.svg#icon-phone"
+							/>
+					</svg>
+
+				</a>
+
+				<cms:module
+					name="gallery"
+					action="show_image_list"
+					group="header_slider"
+					template="parts/slider_images.xml"
+					/>
+			</header>
 		</body>
 	</html>
 </document>

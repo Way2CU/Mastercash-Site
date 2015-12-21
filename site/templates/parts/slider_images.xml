@@ -1,0 +1,3 @@
+<document>
+	<img src="$params['image']" alt="$params['title'][$language]" class="slider_image" cms:eval="src,alt"/>
+</document>

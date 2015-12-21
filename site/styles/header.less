@@ -1,0 +1,78 @@
+/**
+ * Header Style Sheet
+ * Mastercash Site
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+header {
+	display: block;
+	padding: 50px calc(~'(100% - 1200px) / 2');
+	min-height: 700px;
+	position: relative;	
+}
+
+header img.logo {
+	width: 35%;
+}
+
+header h1 {
+	display: block;
+	width: 550px;
+}
+
+header p {
+	display: block;
+	font-size: 1.3em;
+	font-weight: 700;
+}
+header a svg,
+header p svg {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 10px;
+	width: 40px;
+	height: 40px;
+	fill: @color_icon;
+}
+
+header a svg {
+	padding-right: 10px;
+	fill: white;
+}
+
+header a {
+	display: inline-block;
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+	color: white;
+	font-weight: 700;
+	font-size: 2em;
+	background-color: @color_action;
+	transition: all 0.3s;
+}
+
+header a:hover {
+	background-color: @color_icon;
+}
+
+header a span {
+	display: block;
+	padding-bottom: 5px;
+	font-size: 0.5em;
+	font-weight: 400;
+}
+
+header img.slider_image {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 1920px;
+	height: 800px;
+	z-index: -1;
+}
