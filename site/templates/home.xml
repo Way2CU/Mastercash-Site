@@ -71,13 +71,13 @@
 					</svg>
 
 				</a>
-
-				<cms:module
-					name="gallery"
-					action="show_image_list"
-					group="header_slider"
-					template="parts/slider_images.xml"
-					/>
+				<cms:desktop>
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="header_slider"
+						template="parts/slider_images.xml"
+						/>
 
 				<div id="form_wrap">
 					<p><cms:text constant="title_form"/></p>
@@ -87,6 +87,8 @@
 						text_id="contact"
 						/>
 				</div>	
+				</cms:desktop>
+					
 			</header>
 
 			<section id="about">
