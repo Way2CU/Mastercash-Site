@@ -6,6 +6,7 @@
 		<head>
 			<title><cms:text constant="site_title"/></title>
 			<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+			<cms:collection include="page_control"/>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 
@@ -77,6 +78,15 @@
 					group="header_slider"
 					template="parts/slider_images.xml"
 					/>
+
+				<div id="form_wrap">
+					<p><cms:text constant="title_form"/></p>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact"
+						/>
+				</div>	
 			</header>
 		</body>
 	</html>

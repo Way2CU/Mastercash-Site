@@ -65,7 +65,6 @@ header a span {
 	display: block;
 	padding-bottom: 5px;
 	font-size: 0.5em;
-	font-weight: 400;
 }
 
 header img.slider_image {
@@ -74,5 +73,103 @@ header img.slider_image {
 	left: 0px;
 	width: 1920px;
 	height: 800px;
+	opacity: 0;
+	visibility: hidden;
 	z-index: -1;
+	transition: all 0.8s;
+}
+
+header img.slider_image.visible {
+	opacity: 1;
+	visibility: visible;
+}
+
+/*contact form*/
+
+div#form_wrap {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	color: @color_ac_white;
+	background-color: fade(@color_ac_text, 80%);
+}
+
+div#form_wrap p {
+	font-size: 2em;
+}
+
+div#form_wrap form {
+	display: block;
+	margin-bottom: 1em;
+}
+
+div#form_wrap form label {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+
+div#form_wrap form label:before {
+	content: "";
+	position: absolute;
+	top: 19px;
+	right: 0px;
+
+	background-image: url(../images/form-icons.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 150px 50px;
+	width: 50px;
+	height: 50px;
+}
+
+div#form_wrap form label:first-of-type:before {
+	background-position: -100px 0px;
+}
+
+div#form_wrap form label:nth-of-type(2):before {
+	background-position: -50px 0px;
+}
+
+div#form_wrap form label  span {
+	display: block;
+	padding-bottom: 5px;
+	text-align: right;
+}
+
+div#form_wrap form label input {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 40px;
+	border: 1px solid @color_ac_white;
+	border-left: none;
+	color: @color_ac_white;
+	background-color: transparent;
+	width: calc(~'(250px - 40px)');
+}
+
+div#form_wrap form div.controls {
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+div#form_wrap form div.controls button {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: none;
+	border: 1px solid @color_ac_white;
+	color: @color_ac_white;
+	background-color: @color_action;
+	width: 150px;
+	height: 40px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+div#form_wrap form div.controls button:hover {
+	background-color: @color_ac_text;
 }
