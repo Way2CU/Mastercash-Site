@@ -1,3 +1,5 @@
 <document>
-	<img src="$params['image']" alt="$params['title'][$language]" class="slider_image" cms:eval="src,alt"/>
+	<figure style="'background-image: url('.$params['image'].');'" cms:eval="style">
+		<cms:markdown param="description" multilanguage="yes"/>
+	</figure>
 </document>
