@@ -1,0 +1,181 @@
+/**
+ * Main Mobile Style Sheet
+ * Mastercash-Site
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+ /*contact form*/
+
+ div#form_wrap {
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	background-color: @color_ac_text;
+ }
+
+ div#form_wrap p {
+ 	display: block;
+ 	margin: 0px;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	width: 95%;
+ 	font-size: 1.5em;
+ 	font-weight: 700;
+ 	color: @color_ac_white;
+ }
+
+ div#form_wrap form {
+ 	display: block;
+ }
+
+ div#form_wrap form label {
+ 	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	margin-bottom: 10px;
+ 	width: 95%;
+ 	position: relative;
+ }
+
+ div#form_wrap form label:before {
+ 	content: "";
+ 	position: absolute;
+ 	top: 25px;
+ 	right: 0px;
+
+ 	background-image: url(../images/form-icons.svg);
+ 	background-repeat: no-repeat;
+ 	background-position: 0px 0px;
+ 	background-size: 150px 50px;
+ 	width: 50px;
+ 	height: 50px;
+ }
+
+ div#form_wrap form label:first-of-type:before {
+ 	background-position: -100px 0px;
+ }
+
+ div#form_wrap form label:nth-of-type(2):before {
+ 	background-position: -50px 0px;
+ }
+
+ div#form_wrap form label  span {
+ 	display: block;
+ 	padding-bottom: 5px;
+ 	color: @color_ac_white;
+ 	text-align: right;
+ }
+
+ div#form_wrap form label input {
+ 	display: block;
+ 	padding-top: 15px;
+ 	padding-bottom: 15px;
+ 	padding-right: 40px;
+ 	border: 1px solid @color_ac_white;
+ 	color: @color_ac_white;
+ 	background-color: transparent;
+ 	width: calc(~'(100% - 40px)');
+ 	transition: all 0.3s;
+ }
+
+ div#form_wrap form label input:focus {
+ 	background-color: fade(@color_ac_white,30%);
+ }
+
+ div#form_wrap form div.controls {
+ 	display: inline-block;
+ 	vertical-align: bottom;
+ }
+
+ div#form_wrap form div.controls button {
+ 	display: block;
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
+ 	border: none;
+ 	border: 1px solid @color_ac_white;
+ 	color: @color_ac_white;
+ 	background-color: @color_action;
+ 	width: 150px;
+ 	height: 50px;
+ 	cursor: pointer;
+ 	transition: all 0.3s;
+ }
+
+ div#form_wrap form div.controls button:hover {
+ 	background-color: @color_ac_text;
+ }
+
+ section#about {
+ 	display: block;
+ 	text-align: center;
+ }
+
+ section#about h2 {
+ 	display: block;
+ }
+
+ section#about h2 img {
+ 	display: inline-block;
+ 	padding-right: 5px;
+ 	width: 40%;
+ }
+
+ section#about > p {
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	font-size: 1.3em;
+	width: 95%;
+ }
+
+ section#about ul {
+ 	display: block;
+ 	margin: 0px;
+ 	padding: 0px;
+ 	list-style-type: none;
+ }
+
+ section#about ul li {
+ 	display: block;
+ 	margin-right: 10px;
+ 	margin-left: 10px;
+ 	margin-top: 50px;
+ 	text-align: right;
+ 	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+ 	position: relative;
+ 	min-height: 200px;
+ }
+
+ section#about ul li h4 {
+ 	margin: 0px;
+ 	color: @color_ac_white;
+ 	padding-right: 10px;
+ 	padding-top: 15px;
+ 	padding-bottom: 15px;
+ }
+
+ section#about ul li.foreign h4 {
+ 	background-color: @color_icon;
+ }
+
+ section#about ul li.loan h4 {
+ 	background-color: @color_ac_text;
+ }
+
+section#about ul li p {
+ 	padding-left: 150px;
+ 	padding-right: 10px;
+ }
+
+ section#about ul li strong {
+ 	display: block;
+ }
+
+ section#about ul li img {
+ 	position: absolute;
+ 	bottom: 10px;
+ 	left: 5px;
+ 	width: 145px;
+ }
