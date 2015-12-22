@@ -3,7 +3,7 @@
 		<h4><cms:var param="title" multilanguage="yes"/></h4>
 		<p><cms:markdown param="content" multilanguage="yes"/></p>
 
-		<cms:if condition="$params['text_id'] == foreign">
+		<cms:if condition="$params['text_id'] == feature1">
 			<img 
 				src="_BASEURL.'/site/images/money-box.svg'"  
 				alt="logo"
@@ -12,7 +12,7 @@
 				/>
 		</cms:if>
 
-		<cms:if condition="$params['text_id'] == loan">
+		<cms:if condition="$params['text_id'] == feature2">
 			<img 
 				src="_BASEURL.'/site/images/girl.svg'"  
 				alt="logo"
