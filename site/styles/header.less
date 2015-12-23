@@ -54,18 +54,19 @@ header a {
 	color: white;
 	font-weight: 700;
 	font-size: 2em;
-	background-color: @color_action;
+	background-color: @color_phone_link;
 	transition: all 0.3s;
 }
 
 header a:hover {
-	background-color: @color_icon;
+	background-color: darken(@color_phone_link,10%);
 }
 
 header a span {
 	display: block;
 	padding-bottom: 5px;
 	font-size: 0.5em;
+	font-weight: 700;
 }
 
 header figure {
